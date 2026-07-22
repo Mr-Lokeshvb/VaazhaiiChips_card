@@ -1,0 +1,536 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#f5edd5;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+
+}
+
+/* ========================= */
+
+.mobile-card{
+
+    width:430px;
+    max-width:100%;
+    background:#fff;
+    border-radius:35px;
+    overflow:hidden;
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+/* ========================= */
+
+.hero{
+
+    width:100%;
+    background:#f7c300;
+
+}
+
+.hero-banner{
+
+    width:100%;
+    display:block;
+    object-fit:cover;
+
+}
+
+/* ========================= */
+
+.content{
+
+    padding:28px;
+
+}
+
+/* ========================= */
+
+.heading{
+
+    text-align:center;
+    margin-bottom:28px;
+
+}
+
+.heading h2{
+
+    font-size:34px;
+    color:#356b1d;
+    font-weight:700;
+
+}
+
+.heading p{
+
+    margin-top:6px;
+    color:#777;
+    font-size:15px;
+
+}
+
+/* ========================= */
+
+.contact-list{
+
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    margin-bottom:35px;
+
+}
+
+.contact{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+}
+
+.icon{
+
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#fff5d8;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-shrink:0;
+
+}
+
+.icon i{
+
+    color:#3d6d24;
+    font-size:24px;
+
+}
+
+.text{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.text span{
+
+    font-weight:600;
+    color:#222;
+    margin-bottom:3px;
+
+}
+
+.text a{
+
+    color:#666;
+    text-decoration:none;
+    font-size:15px;
+
+}
+
+.contact:not(:last-child){
+
+    padding-bottom:18px;
+    border-bottom:1px dashed #ddd;
+
+}
+
+/* ========================= */
+
+.website-card{
+
+    margin-top:10px;
+    border:2px solid #e8d37a;
+    border-radius:24px;
+    padding:22px;
+    background:#fffef8;
+
+}
+
+.website-top{
+
+    display:flex;
+    gap:15px;
+    align-items:flex-start;
+
+}
+
+.website-top i{
+
+    width:55px;
+    height:55px;
+    background:#3d6d24;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+
+}
+
+.website-top h3{
+
+    color:#356b1d;
+    font-size:24px;
+    margin-bottom:5px;
+
+}
+
+.website-top p{
+
+    color:#666;
+    line-height:1.6;
+    font-size:14px;
+
+}
+
+.website-card button{
+
+    width:100%;
+    margin-top:20px;
+    border:none;
+    height:56px;
+    border-radius:14px;
+    background:#356b1d;
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.website-card button:hover{
+
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+}
+
+.website-card button i{
+
+    margin-left:10px;
+
+}
+
+.website-card small{
+
+    display:block;
+    text-align:center;
+    margin-top:16px;
+    color:#356b1d;
+    font-weight:600;
+    font-size:15px;
+
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.action-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    margin-top:30px;
+
+}
+
+.action-grid button{
+
+    border:none;
+    height:82px;
+    border-radius:20px;
+    cursor:pointer;
+    color:#fff;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    transition:.35s;
+}
+
+.action-grid button:hover{
+
+    transform:translateY(-6px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+.action-grid i{
+
+    font-size:26px;
+    margin-bottom:8px;
+
+}
+
+.action-grid span{
+
+    font-size:15px;
+    font-weight:600;
+
+}
+
+/* Colors */
+
+.action-grid button:nth-child(1){
+
+    background:#356b1d;
+
+}
+
+.whatsapp{
+
+    background:#22c55e;
+
+}
+
+.instagram{
+
+    background:linear-gradient(
+    135deg,
+    #833AB4,
+    #FD1D1D,
+    #FCAF45
+    );
+
+}
+
+.share{
+
+    background:#f7b500;
+    color:#222 !important;
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+
+    margin-top:35px;
+    text-align:center;
+    padding-top:28px;
+    border-top:1px solid #eee;
+
+}
+
+.footer h3{
+
+    color:#356b1d;
+    font-size:28px;
+    margin-bottom:10px;
+
+}
+
+.footer p{
+
+    color:#777;
+    line-height:1.8;
+    font-size:14px;
+
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+.mobile-card{
+
+    animation:card .8s ease;
+
+}
+
+@keyframes card{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =========================
+   BUTTON EFFECT
+========================= */
+
+button{
+
+    overflow:hidden;
+    position:relative;
+
+}
+
+button::after{
+
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:-100%;
+    top:0;
+
+    background:rgba(255,255,255,.18);
+
+    transform:skewX(-25deg);
+
+    transition:.5s;
+
+}
+
+button:hover::after{
+
+    left:120%;
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:480px){
+
+body{
+
+    padding:10px;
+
+}
+
+.mobile-card{
+
+    border-radius:24px;
+
+}
+
+.content{
+
+    padding:22px;
+
+}
+
+.heading h2{
+
+    font-size:28px;
+
+}
+
+.website-top h3{
+
+    font-size:20px;
+
+}
+
+.website-card{
+
+    padding:18px;
+
+}
+
+.website-card button{
+
+    height:50px;
+    font-size:16px;
+
+}
+
+.icon{
+
+    width:52px;
+    height:52px;
+
+}
+
+.icon i{
+
+    font-size:20px;
+
+}
+
+.text span{
+
+    font-size:15px;
+
+}
+
+.text a{
+
+    font-size:14px;
+
+}
+
+.action-grid{
+
+    gap:14px;
+
+}
+
+.action-grid button{
+
+    height:72px;
+
+}
+
+.action-grid i{
+
+    font-size:22px;
+
+}
+
+.action-grid span{
+
+    font-size:14px;
+
+}
+
+.footer h3{
+
+    font-size:24px;
+
+}
+
+}
+
+/* =========================
+   LARGE PHONES
+========================= */
+
+@media(min-width:481px){
+
+.mobile-card{
+
+    width:430px;
+
+}
+
+}
