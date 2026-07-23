@@ -19,7 +19,51 @@ body{
     padding:20px;
 
 }
+/* =========================
+        OUR STORY
+========================= */
 
+.story{
+
+    margin-top:35px;
+    background:#fffdf5;
+    border:2px solid #f1df9a;
+    border-radius:22px;
+    padding:25px;
+
+}
+
+.story h2{
+
+    color:#356b1d;
+    margin-bottom:18px;
+    font-size:28px;
+    font-weight:700;
+
+}
+
+.story p{
+
+    color:#555;
+    font-size:15px;
+    line-height:1.9;
+    margin-bottom:16px;
+    text-align:justify;
+
+}
+
+.story .highlight{
+
+    margin-top:20px;
+    background:#356b1d;
+    color:#fff;
+    padding:18px;
+    border-radius:16px;
+    text-align:center;
+    font-weight:600;
+    line-height:1.8;
+
+}
 /* ========================= */
 
 .mobile-card{
